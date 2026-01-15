@@ -1,0 +1,24 @@
+The Star Schema is the most widely used architectural model for data warehouses and data marts. It gets its name from its visual layout: a large, central "Fact" table surrounded by multiple "Dimension" tables, resembling a star.
+
+In this model, the database is purposely denormalized to make it easier for business users to query and faster for the system to generate reports.
+
+1. The Core Components
+A star schema consists of two distinct types of tables that serve different purposes:
+
+A. The Fact Table (The "How Much")
+Located at the center of the star, the fact table records the quantitative, measurable data of a business process (e.g., a sale, a login, or a temperature reading).
+
+Keys: It contains "Foreign Keys" that link to the surrounding dimension tables.
+
+Measures: It stores numerical metrics like Quantity_Sold, Total_Price, or Profit_Margin.
+
+Growth: This table is typically very "tall"—it can grow to millions or billions of rows as new transactions occur.
+
+B. Dimension Tables (The "Who, What, Where, When")
+These tables radiate out from the center and provide descriptive context for the numbers in the fact table.
+
+Attributes: They contain text-based data like Product_Name, Store_City, Customer_Segment, or Month_Name.
+
+Primary Keys: Each dimension table has a unique ID (Primary Key) that connects to the Fact table.
+
+Normalization: Unlike standard databases, these are denormalized, meaning descriptive data is flattened into one table to avoid complex joins.
