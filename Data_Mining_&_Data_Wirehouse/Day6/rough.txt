@@ -1,0 +1,4 @@
+Analyzed unemployment trends using real-world datasets to uncover patterns and correlations in job market fluctuations. 
+Performed data cleaning, visualization, and statistical analysis using Pandas and Matplotlib. 
+Presented insights through interactive dashboards. 
+Technologies: Python, Pandas, Matplotlib, Seaborn 
